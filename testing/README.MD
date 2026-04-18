@@ -15,9 +15,9 @@ Pour lancer les tests souhaités.
 
 -> placer le repo du testeur dans le dossier de votre librairie
 -> creer votre librairie grace a votre Makefile.
--> executer la commande : gcc -I. testing/fichier_to_test -L. -lft -o go
+-> executer la commande : gcc -I. libft_test/testing/fichier_to_test -L. -lft -o go
 Exemple pour atoi : 
----> gcc -I. testing/ft_atoi_test.c -L. -lft -o go
+---> gcc -I. libft_test/testing/ft_atoi_test.c -L. -lft -o go
 
 -> Pas de tests effectués pour calloc 
 
@@ -32,3 +32,8 @@ Si il y a des erreurs, vous les verrez.
 -> installer la Bibliotheque bsd (ceci est pour Linux. Les autres pas la moindre idee): 
 =========================   sudo apt install libbsd-dev   ==============================
 -> Lancer avec le flag -lbsd
+
+===> Pour les tests de ft_lstdelone et ft_lstclear
+-> lancez l'executable avec valgrind
+-> valgrind ./go
+-> Et regardez la console qui permet de voir si del a bien été appelé.

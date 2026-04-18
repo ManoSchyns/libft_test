@@ -6,7 +6,7 @@
 //Pour ce test. Regardez bien le fichier output.txt après l'avoir lancé
 int main(void)
 {
-    int fd = open("testing/output.txt", O_WRONLY | O_TRUNC);
+    int fd = open("libft_test/testing/output.txt", O_WRONLY | O_TRUNC);
     if (fd < 0)
     {
         printf("no \n");
